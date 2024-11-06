@@ -10,7 +10,8 @@ export default defineConfig({
   sourcemap: true,
   noExternal: ["log-symbols", "is-unicode-supported", "chalk"],
   banner: {
-    js: `#!/usr/bin/env node`,
+    js: `#!/usr/bin/env node
+'use strict';`,
   },
   esbuildOptions(options) {
     options.platform = "node"

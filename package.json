@@ -25,7 +25,7 @@
   "scripts": {
     "start": "npx tsx ./src/index.ts",
     "start:unsafe": "npx tsx ./src/index.ts --unsafe",
-    "build": "tsup && chmod +x dist/index.cjs",
+    "build": "tsup && chmod +x dist/index.cjs && chmod +x dist/index.js",
     "version:patch": "pnpm version patch",
     "version:minor": "pnpm version minor",
     "version:major": "pnpm version major"

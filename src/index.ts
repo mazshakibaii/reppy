@@ -1,5 +1,3 @@
-#!/usr/bin/env node
-
 import { parseAndDocument } from "./lib/parser.js"
 import { generateDocs } from "./lib/generateDocs.js"
 import {
