@@ -1,6 +1,6 @@
 {
   "name": "reppy",
-  "version": "1.2.2",
+  "version": "1.2.1",
   "description": "Let reppy generate documentation for the functions in your codebase.",
   "main": "./dist/index.cjs",
   "module": "./dist/index.js",
@@ -75,6 +75,7 @@
     "tree-sitter-typescript": "^0.20.5",
     "typescript": "^5.6.3",
     "@typescript-eslint/parser": "^8.13.0",
+    "@typescript-eslint/eslint-plugin": "^8.13.0",
     "eslint": "^9.14.0",
     "eslint-plugin-jsdoc": "^50.4.3"
   },
@@ -83,7 +84,6 @@
     "@types/command-line-usage": "^5.0.4",
     "@types/minimatch": "^5.1.2",
     "@types/node": "^22.8.7",
-    "@typescript-eslint/eslint-plugin": "^8.13.0",
     "ts-node": "^10.9.2",
     "tsup": "^8.3.5",
     "tsx": "^4.7.1"
