@@ -170,23 +170,20 @@ async function processJavaScriptFile(filePath: string): Promise<Function[]> {
 
   const eslint = new ESLint({
     cwd: process.cwd(),
-    // Load the config directly
-    baseConfig: {
-      files: ["**/*.{js,jsx,ts,tsx}"],
-      languageOptions: {
-        parser: (await import("@typescript-eslint/parser")).default,
-        ecmaVersion: 2022,
-        sourceType: "module",
+    overrideConfigFile: true, // Enable flat config
+    overrideConfig: [
+      {
+        files: ["**/*.{js,jsx,ts,tsx}"],
+        languageOptions: {
+          parser: (await import("@typescript-eslint/parser")).default,
+          ecmaVersion: 2022,
+          sourceType: "module",
+          parserOptions: {
+            project: null, // Disable TypeScript project resolution
+          },
+        },
       },
-      plugins: {
-        jsdoc: (await import("eslint-plugin-jsdoc")).default,
-      },
-      rules: {
-        "jsdoc/require-jsdoc": "warn",
-        "jsdoc/check-param-names": "warn",
-        "jsdoc/require-description": "warn",
-      },
-    },
+    ],
   })
 
   try {
