@@ -1,0 +1,101 @@
+{
+  "name": "reppy",
+  "version": "1.1.6",
+  "description": "Let reppy generate documentation for the functions in your codebase.",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "type": "module",
+  "bin": {
+    "reppy": "./dist/index.cjs"
+  },
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.cjs",
+      "import": "./dist/index.js",
+      "default": "./dist/index.js"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "start": "npx tsx ./src/index.ts",
+    "start:unsafe": "npx tsx ./src/index.ts --unsafe",
+    "build": "tsup && chmod +x dist/index.cjs",
+    "version:patch": "pnpm version patch",
+    "version:minor": "pnpm version minor",
+    "version:major": "pnpm version major"
+  },
+  "keywords": [
+    "documentation",
+    "generator",
+    "llm",
+    "ai",
+    "openai",
+    "reppy",
+    "typescript",
+    "javascript",
+    "python",
+    "rust",
+    "java",
+    "go"
+  ],
+  "author": "Maziar Shakibaii",
+  "license": "MIT",
+  "dependencies": {
+    "@ai-sdk/amazon-bedrock": "^0.0.35",
+    "@ai-sdk/anthropic": "^0.0.55",
+    "@ai-sdk/azure": "^0.0.51",
+    "@ai-sdk/cohere": "^0.0.28",
+    "@ai-sdk/groq": "^0.0.3",
+    "@ai-sdk/mistral": "^0.0.46",
+    "@ai-sdk/openai": "^0.0.71",
+    "@inquirer/prompts": "^7.0.1",
+    "@typescript-eslint/parser": "^8.13.0",
+    "ai": "^3.4.33",
+    "cfonts": "^3.3.0",
+    "command-line-args": "^6.0.1",
+    "command-line-usage": "^7.0.1",
+    "dotenv": "^16.4.5",
+    "enquirer": "^2.4.1",
+    "eslint": "^9.14.0",
+    "eslint-plugin-jsdoc": "^50.4.3",
+    "glob": "^10.4.5",
+    "listr2": "^8.0.1",
+    "log-symbols": "^7.0.0",
+    "minimatch": "^10.0.1",
+    "picocolors": "^1.0.0",
+    "tree-sitter": "^0.20.1",
+    "tree-sitter-go": "^0.20.0",
+    "tree-sitter-java": "^0.20.2",
+    "tree-sitter-javascript": "^0.20.0",
+    "tree-sitter-python": "^0.20.4",
+    "tree-sitter-rust": "^0.20.4",
+    "tree-sitter-typescript": "^0.20.5",
+    "typescript": "^5.6.3"
+  },
+  "devDependencies": {
+    "@types/command-line-args": "^5.2.3",
+    "@types/command-line-usage": "^5.0.4",
+    "@types/minimatch": "^5.1.2",
+    "@types/node": "^22.8.7",
+    "@typescript-eslint/eslint-plugin": "^8.13.0",
+    "@typescript-eslint/parser": "^6.x",
+    "eslint": "^8.x",
+    "eslint-plugin-jsdoc": "^46.x",
+    "ts-node": "^10.9.2",
+    "tsup": "^8.3.5",
+    "tsx": "^4.7.1"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mazshakibaii/reppy.git"
+  }
+}
