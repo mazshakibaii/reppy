@@ -4,6 +4,8 @@ Use your favourite LLM to document for your entire codebase with just one comman
 
 [![npm version](https://badge.fury.io/js/reppy.svg)](https://www.npmjs.com/package/reppy)
 
+![image](./examples/image.png)
+
 ## ⭐️ Quick Start
 
 1. Install with 1 command:
