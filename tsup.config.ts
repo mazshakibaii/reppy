@@ -16,4 +16,6 @@ export default defineConfig({
   esbuildOptions(options) {
     options.platform = "node"
   },
+  target: "node20",
+  minify: false,
 })
