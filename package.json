@@ -94,5 +94,8 @@
   "repository": {
     "type": "git",
     "url": "git+https://github.com/mazshakibaii/reppy.git"
+  },
+  "engines": {
+    "node": ">=16.0.0"
   }
 }
