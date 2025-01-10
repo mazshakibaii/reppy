@@ -175,8 +175,9 @@ const defaultModels = {
  //anthropic: "claude-3.5-sonnet",
   //cohere: "command",
  //mistral: "mistral-tiny",
-//    bedrock: "claude-3.5-sonnet",
-    bedrock:    "us.anthropic.claude-3-sonnet-20240229-v1:0us.anthropic.claude-3-sonnet-20240229-v1:0",
+    //    bedrock: "claude-3.5-sonnet",
+    bedrock:"amazon.nova-lite-v1:0",
+    //bedrock:    "us.anthropic.claude-3-sonnet-20240229-v1:0us.anthropic.claude-3-sonnet-20240229-v1:0",
     //"meta.llama3-3-70b-instruct-v1:0",
 
     //"meta.llama3-70b-instruct-v1:0",
