@@ -1,5 +1,7 @@
 export AWS_REGION=us-east-2
 
+you need to requst access to the models in aws.
+
 list model
 `aws bedrock list-foundation-models`
 
