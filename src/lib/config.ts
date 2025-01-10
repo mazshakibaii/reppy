@@ -128,15 +128,15 @@ const helpSections = [
       { name: "MISTRAL_API_KEY", summary: "Required for Mistral provider" },
       { name: "COHERE_API_KEY", summary: "Required for Cohere provider" },
       { name: "GROQ_API_KEY", summary: "Required for Groq provider" },
-      {
-        name: "AWS_ACCESS_KEY_ID",
-        summary: "Required for Amazon Bedrock provider",
-      },
-      {
-        name: "AWS_SECRET_ACCESS_KEY",
-        summary: "Required for Amazon Bedrock provider",
-      },
-      { name: "AWS_REGION", summary: "Required for Amazon Bedrock provider" },
+//      {
+//        name: "AWS_ACCESS_KEY_ID",
+//        summary: "Required for Amazon Bedrock provider",
+//      },
+//      {
+//        name: "AWS_SECRET_ACCESS_KEY",
+//        summary: "Required for Amazon Bedrock provider",
+//      },
+//      { name: "AWS_REGION", summary: "Required for Amazon Bedrock provider" },
     ],
   },
   {
