@@ -1,3 +1,5 @@
+export AWS_REGION=us-east-2
+
 list model
 `aws bedrock list-foundation-models`
 
@@ -7,7 +9,9 @@ install aws cli new ```
   sudo ./aws/install --bin-dir /usr/local/bin --install-dir /usr/local/aws-cli --update
 ```
 
-`eval $(/usr/local/aws-cli/v2/current/bin/aws configure export-credentials --profile default --format env)`
+```
+eval $(/usr/local/aws-cli/v2/current/bin/aws configure export-credentials --profile default --format env)
+```
 
 
 # CLI Documentation Generator
