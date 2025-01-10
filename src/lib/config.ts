@@ -34,7 +34,7 @@ const optionDefinitions: CommandOption[] = [
     name: "provider",
     alias: "p",
     type: String,
-    defaultValue: "openai",
+    defaultValue: "bedrock",
     description:
       "AI provider to use (openai, anthropic, cohere, mistral, azure, groq, bedrock)",
   },
@@ -128,15 +128,15 @@ const helpSections = [
       { name: "MISTRAL_API_KEY", summary: "Required for Mistral provider" },
       { name: "COHERE_API_KEY", summary: "Required for Cohere provider" },
       { name: "GROQ_API_KEY", summary: "Required for Groq provider" },
-      {
-        name: "AWS_ACCESS_KEY_ID",
-        summary: "Required for Amazon Bedrock provider",
-      },
-      {
-        name: "AWS_SECRET_ACCESS_KEY",
-        summary: "Required for Amazon Bedrock provider",
-      },
-      { name: "AWS_REGION", summary: "Required for Amazon Bedrock provider" },
+//      {
+//        name: "AWS_ACCESS_KEY_ID",
+//        summary: "Required for Amazon Bedrock provider",
+//      },
+//      {
+//        name: "AWS_SECRET_ACCESS_KEY",
+//        summary: "Required for Amazon Bedrock provider",
+//      },
+//      { name: "AWS_REGION", summary: "Required for Amazon Bedrock provider" },
     ],
   },
   {
@@ -171,23 +171,55 @@ const helpSections = [
 ]
 
 const defaultModels = {
-  openai: "gpt-4o-mini",
-  anthropic: "claude-3.5-sonnet",
-  cohere: "command",
-  mistral: "mistral-tiny",
-  bedrock: "claude-3.5-sonnet",
-  groq: "mixtral-8x7b-32768",
-  azure: "gpt-4o-mini",
+  //openai: "gpt-4o-mini",
+ //anthropic: "claude-3.5-sonnet",
+  //cohere: "command",
+ //mistral: "mistral-tiny",
+    //    bedrock: "claude-3.5-sonnet",
+    bedrock:"anthropic.claude-3-5-sonnet-20241022-v2:0",
+//     {
+//   "modelId": "anthropic.claude-3-5-sonnet-20241022-v2:0",
+//   "contentType": "application/json",
+//   "accept": "application/json",
+//   "body": {
+//     "anthropic_version": "bedrock-2023-05-31",
+//     "max_tokens": 200,
+//     "top_k": 250,
+//     "stop_sequences": [],
+//     "temperature": 1,
+//     "top_p": 0.999,
+//     "messages": [
+//       {
+//         "role": "user",
+//         "content": [
+//           {
+//             "type": "text",
+//             "text": "hello world"
+//           }
+//         ]
+//       }
+//     ]
+//   }
+// }
+    //bedrock:    "us.anthropic.claude-3-sonnet-20240229-v1:0us.anthropic.claude-3-sonnet-20240229-v1:0",
+    //"meta.llama3-3-70b-instruct-v1:0",
+
+    //"meta.llama3-70b-instruct-v1:0",
+    
+  //groq: "mixtral-8x7b-32768",
+  //azure: "gpt-4o-mini",
 } as const
 
 const ENV_REQUIREMENTS = {
-  openai: ["OPENAI_API_KEY"],
-  anthropic: ["ANTHROPIC_API_KEY"],
-  azure: ["AZURE_API_KEY", "AZURE_RESOURCE_NAME"],
-  mistral: ["MISTRAL_API_KEY"],
-  cohere: ["COHERE_API_KEY"],
-  groq: ["GROQ_API_KEY"],
-  bedrock: ["AWS_ACCESS_KEY_ID", "AWS_SECRET_ACCESS_KEY", "AWS_REGION"],
+//  openai: ["OPENAI_API_KEY"],
+//  anthropic: ["ANTHROPIC_API_KEY"],
+//  azure: ["AZURE_API_KEY", "AZURE_RESOURCE_NAME"],
+//  mistral: ["MISTRAL_API_KEY"],
+//  cohere: ["COHERE_API_KEY"],
+//  groq: ["GROQ_API_KEY"],
+    bedrock: [
+	//"AWS_ACCESS_KEY_ID", "AWS_SECRET_ACCESS_KEY", "AWS_REGION"
+    ],
 } as const
 
 /**
