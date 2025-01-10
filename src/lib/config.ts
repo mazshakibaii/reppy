@@ -34,7 +34,7 @@ const optionDefinitions: CommandOption[] = [
     name: "provider",
     alias: "p",
     type: String,
-    defaultValue: "openai",
+    defaultValue: "bedrock",
     description:
       "AI provider to use (openai, anthropic, cohere, mistral, azure, groq, bedrock)",
   },
@@ -171,23 +171,25 @@ const helpSections = [
 ]
 
 const defaultModels = {
-  openai: "gpt-4o-mini",
-  anthropic: "claude-3.5-sonnet",
-  cohere: "command",
-  mistral: "mistral-tiny",
+  //openai: "gpt-4o-mini",
+ //anthropic: "claude-3.5-sonnet",
+  //cohere: "command",
+ //mistral: "mistral-tiny",
   bedrock: "claude-3.5-sonnet",
-  groq: "mixtral-8x7b-32768",
-  azure: "gpt-4o-mini",
+  //groq: "mixtral-8x7b-32768",
+  //azure: "gpt-4o-mini",
 } as const
 
 const ENV_REQUIREMENTS = {
-  openai: ["OPENAI_API_KEY"],
-  anthropic: ["ANTHROPIC_API_KEY"],
-  azure: ["AZURE_API_KEY", "AZURE_RESOURCE_NAME"],
-  mistral: ["MISTRAL_API_KEY"],
-  cohere: ["COHERE_API_KEY"],
-  groq: ["GROQ_API_KEY"],
-  bedrock: ["AWS_ACCESS_KEY_ID", "AWS_SECRET_ACCESS_KEY", "AWS_REGION"],
+//  openai: ["OPENAI_API_KEY"],
+//  anthropic: ["ANTHROPIC_API_KEY"],
+//  azure: ["AZURE_API_KEY", "AZURE_RESOURCE_NAME"],
+//  mistral: ["MISTRAL_API_KEY"],
+//  cohere: ["COHERE_API_KEY"],
+//  groq: ["GROQ_API_KEY"],
+    bedrock: [
+	//"AWS_ACCESS_KEY_ID", "AWS_SECRET_ACCESS_KEY", "AWS_REGION"
+    ],
 } as const
 
 /**
