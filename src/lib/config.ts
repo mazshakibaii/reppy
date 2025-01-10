@@ -176,7 +176,31 @@ const defaultModels = {
   //cohere: "command",
  //mistral: "mistral-tiny",
     //    bedrock: "claude-3.5-sonnet",
-    bedrock:"amazon.nova-lite-v1:0",
+    bedrock:"anthropic.claude-3-5-sonnet-20241022-v2:0",
+//     {
+//   "modelId": "anthropic.claude-3-5-sonnet-20241022-v2:0",
+//   "contentType": "application/json",
+//   "accept": "application/json",
+//   "body": {
+//     "anthropic_version": "bedrock-2023-05-31",
+//     "max_tokens": 200,
+//     "top_k": 250,
+//     "stop_sequences": [],
+//     "temperature": 1,
+//     "top_p": 0.999,
+//     "messages": [
+//       {
+//         "role": "user",
+//         "content": [
+//           {
+//             "type": "text",
+//             "text": "hello world"
+//           }
+//         ]
+//       }
+//     ]
+//   }
+// }
     //bedrock:    "us.anthropic.claude-3-sonnet-20240229-v1:0us.anthropic.claude-3-sonnet-20240229-v1:0",
     //"meta.llama3-3-70b-instruct-v1:0",
 
