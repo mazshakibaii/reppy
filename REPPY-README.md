@@ -1,3 +1,9 @@
+  683  curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+  684  unzip awscliv2.zip
+  685  sudo ./aws/install --bin-dir /usr/local/bin --install-dir /usr/local/aws-cli --update
+
+eval $(/usr/local/aws-cli/v2/current/bin/aws configure export-credentials --profile mdupont --format env)
+
 # CLI Documentation Generator
 
 ## Overview
