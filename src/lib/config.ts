@@ -171,13 +171,13 @@ const helpSections = [
 ]
 
 const defaultModels = {
-  openai: "gpt-4o-mini",
+  openai: "gpt-4.1-mini",
   anthropic: "claude-3.5-sonnet",
   cohere: "command",
   mistral: "mistral-tiny",
   bedrock: "claude-3.5-sonnet",
   groq: "mixtral-8x7b-32768",
-  azure: "gpt-4o-mini",
+  azure: "gpt-4.1-mini",
 } as const
 
 const ENV_REQUIREMENTS = {
